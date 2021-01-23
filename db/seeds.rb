@@ -6,10 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+video_seed_data = YAML.load(File.read(Rails.root.join("db", "video_seed_data.yml")))
 
-yaml = YAML.load(File.read(Rails.root.join('db', 'video_data.yml')))
-
-yaml.keys.map {|key|
-    subject = Subject.find_or_create_by(name: yaml[key]['subject'])
-    Video.find_or_create_by(subject: subject, title: yaml[key]['title'])
+video_seed_data.keys.map { |k|
+  s = Subject.find_or_create_by(name: video_seed_data[k]["subject"])
+  Video.find_or_create_by(subject: s, title: video_seed_data[k]["title"])
 }
