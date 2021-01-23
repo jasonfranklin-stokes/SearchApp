@@ -1,11 +1,11 @@
 module VideoService
   class Search
-    def self.using_filters(ts)
-      t = ts.fetch(:title, "")
-      s = ts.fetch(:subject, "")
+    def self.store(params)
+      sf = SearchFilter.new(params)
       OpenStruct.new({
         success?: true,
-        payload: Video.filter_by_title_contains(t).filter_by_subject_name_contains(s),
+        payload: Video.title_contains(sf.by_title).
+          subject_name_contains(sf.by_subject),
       })
     end
   end
