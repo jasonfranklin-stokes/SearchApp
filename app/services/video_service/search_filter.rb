@@ -1,6 +1,11 @@
 module VideoService
   class SearchFilter
     def initialize(params)
+      # TODO
+      # this code tries to infer the subject and title from the same string
+      # this is not the correct apprach,
+      # as to do it properly would mean a lot of code and hitting the DB.
+      # the subject and title are passed in seperatly
       search_term_as_array = params[:search_term].split
       @terms = [
         search_term_as_array[0..-2].join(" "),
