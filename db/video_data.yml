@@ -1,0 +1,42 @@
+Satz_des_Pythagoras:
+  title: Satz des Pythagoras
+  subject: Mathematik
+Rechter_Winkel:
+  title: Der Rechte Winkel
+  subject: Mathematik
+Quadratwurzel:
+  title: Die Quadratwurzel
+  subject: Mathematik
+Rechtwinkliges_Dreieck:
+  title: Das rechtwinklige Dreieick
+  subject: Mathematik
+Gleichschenkliges_Dreieck:
+  title: Das gleichschenklige Dreieick
+  subject: Mathematik
+Gleichseitiges_Dreieck:
+  title: Das gleichseitige Dreieick
+  subject: Mathematik
+Lessing:
+  title: Lessing
+  subject: Deutsch
+Schiller:
+  title: Schiller
+  subject: Deutsch
+Goethe:
+  title: Goethe
+  subject: Deutsch
+Eisen:
+  title: Eisen und andere Metalle
+  subject: Chemie
+Wolf:
+  title: Der Wolf
+  subject: Biologie
+Bäume:
+  title: Bäume und Wurzeln
+  subject: Biologie
+Pythagoras:
+  title: Die Pythagoreer
+  subject: Geschichte
+Eisenzeit:
+  title: Die Eisenzeit
+  subject: Geschichte
