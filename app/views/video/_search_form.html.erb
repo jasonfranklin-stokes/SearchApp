@@ -1,14 +1,14 @@
 <%= form_for :query, url: video_index_path, method: :get do |f| %>
     <div class="field">
-        <%= f.text_field :query_title, placeholder: 'Search titles...', value: search_params.dig(:query_title) %>
+        <%= f.text_field :query_title, placeholder: "Search titles...", value: search_params.dig(:query_title) %>
     </div>
 
     <div class="field">
         <%= f.label :subject %>
-        <%= f.select :subject_id,  options_for_select(searchable_subjects.collect { |p| [ p.name, p.id ] }, search_params.dig(:subject_id)),{ include_blank: true } %>
+        <%= f.select :subject_id, options_for_select(searchable_subjects.collect { |p| [p.name, p.id] }, search_params.dig(:subject_id)), { include_blank: true } %>
     </div>
 
     <div class="actions">
-        <%= f.submit 'Search' %>
+        <%= f.submit "Search" %>
     </div>
 <% end %>
