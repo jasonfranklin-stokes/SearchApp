@@ -17,6 +17,7 @@ you can find a **.env.example** file in the root folder of the app that you can 
 ### Setup
 bundle install  
 rake db:create  
+rake db:migrate  
 rake db:seed  
 ### Run
 rails s  
