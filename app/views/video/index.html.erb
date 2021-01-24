@@ -1,0 +1,5 @@
+<%= render partial:'search_form', locals: {search_params: @search_params, searchable_subjects: @searchable_subjects} %>
+
+<% @videos.each do |video| %>
+<%= render video %>
+<% end %>

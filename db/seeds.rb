@@ -6,9 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-x = VideoService::Search.store({ search_term: "Das rech ma" })
-puts x.inspect
-
 video_seed_data = YAML.load(File.read(Rails.root.join("db", "video_seed_data.yml")))
 
 video_seed_data.keys.map { |k|
