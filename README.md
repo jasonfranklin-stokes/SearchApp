@@ -16,6 +16,8 @@ you can find a **.env.example** file in the root folder of the app that you can 
   `MYSQL_PORT =` 
 ### Setup
 bundle install  
+rake db:create  
 rake db:seed  
+### Run
 rails s  
 navigate to `http://localhost:3000/video/index`
